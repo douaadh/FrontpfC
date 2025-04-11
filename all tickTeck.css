@@ -1,0 +1,541 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  
+}
+body {
+  min-height: 100vh;
+}
+
+
+
+/*---------------------------------- Navbar -----------------------------------*/
+.navbar {
+  display: flex;
+  
+  align-items: center;
+  background: linear-gradient(to right, #ffffff 0%,  #ffffff 55%,  #E8F4FF 100% ); 
+ padding:10px 5px;
+  width: 100%;
+  height: 95px;
+  position: fixed;
+ 
+   z-index: 1000;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-left {
+  display: flex;
+ 
+}
+
+.nav-logo {
+  width: 70px;
+  height: auto;
+}
+.alclogo{
+  width: 43px;
+  height: auto;
+
+}
+.search-bar{
+  
+
+  display: flex;
+justify-items: baseline;
+ 
+}
+.search-bar img{
+  margin-left: -45px;
+}
+
+.search-bar input {
+  padding-left: 20px; /* Adjust the right padding */
+  text-align: left;
+  color: #0E466F;
+  border:1px solid #0E466F;
+ 
+ 
+  margin-left: 370px;
+  margin-top: 3px;
+  width: 932px;
+  height: 51px;
+ border-radius: 5px;
+  font-size: 24px;
+}
+input::placeholder {
+  color: #0E466F;}
+
+
+.nav-right .notification-icon img {
+  width: 33px;
+  height: 33px;
+  color: #0E466F;
+  margin-top: 11px;
+  margin-left: 30px;
+ 
+ 
+ }
+
+ .nav-itm {
+    list-style: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-right: 30px;
+    position: relative; /* Added for dropdown positioning */
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    gap: 10px; /* Added for spacing between elements */
+  }
+  
+  .nav-link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px; 
+    object-fit: cover;
+  }
+  
+
+  .dropdow-menu {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 83px;
+    background: #ffffff;
+   
+    
+    box-shadow: 10px 2px 15px rgba(0.5,0,0,0.1);
+    min-width: 258px;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdow-menu.show {
+    display: block;
+  }
+  
+  .dropdow-link {
+    padding: 12px 50px;
+    display: flex;
+    border:0.2px solid #0a0a0a25;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdow-link:hover {
+    background: #f8f9fa;
+  }
+  
+  .symbols-rounded img {
+    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .rotate-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Material icons styling */
+  .material-symbols-rounded {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+/* ------------------------------------------------Sidbar---------------------------------------------*/
+/* Sidebar CSS */
+.sidebar {
+  position: fixed;
+  top: 95px;
+  left: 0;
+  width: 450px;
+  height: calc(100vh - 95px);
+  background-color: #F9FCFE;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Navigation Lists */
+.sidebar-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav .primary-nav {
+  margin-top: 60px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Nav Items */
+.sidebar-nav .nav-item {
+  position: relative;
+  margin: 5px 30px;
+}
+
+/* Nav Links */
+.sidebar-nav .nav-link,
+.sidebar-nav .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding: 12px 2px;
+  scrollbar-width: bold;
+ 
+  color: #151A2D;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 42px;
+  
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .dropdown-toggle:hover {
+  background: #288bdb1b;
+  border-left: 15px solid #2889DB;
+  margin:0 -20px;
+}
+
+/* FIX: Ensure dropdown menu items have the hover effect */
+.dropdown-menu .nav-link {
+  font-size: 24px;
+  padding: 8px 12px;
+  list-style: none;
+  color: #4A5568;
+  border-radius: 8px; /* Add border radius for consistent look */
+  transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+/* FIX: Add explicit hover style for dropdown items */
+.dropdown-menu .nav-item .nav-link:hover {
+ border-left: 2px solid #575859;
+ color: #2889DB;
+}
+/* Icons in sidebar */
+.sidebar-nav .nav-link img,
+.sidebar-nav .dropdown-toggle img:first-child {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.nav-label {
+  flex-grow: 1;
+}
+
+/* Dropdown toggle */
+.sidebar-nav .dropdown-toggle {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.dropdown-icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.dropdown-container.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.sidebar-nav .dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 80px;
+  margin: 0;
+}
+
+.sidebar-nav .dropdown-container.open .dropdown-menu {
+  max-height: 200px;
+}
+
+.dropdown-menu .nav-item {
+  margin: 2px 0;
+}
+
+
+
+/* Active states */
+.nav-item.active > .nav-link,
+.dropdown-container.active > .dropdown-toggle {
+  background-color: #E6F0FF;
+  border-left: 4px solid #0E466F;
+  padding-left: 11px;
+  color: #0E466F;
+  font-weight: 600;
+}
+
+.dropdown-menu .nav-item.active .nav-link {
+  background-color: #E6F0FF;
+  color: #0E466F;
+  font-weight: 600;
+}
+
+/* This ensures open dropdown items don't all get borders */
+.dropdown-container.open:not(.active) .dropdown-toggle,
+.dropdown-container.open .dropdown-menu .nav-item:not(.active) .nav-link {
+  border-left: none;
+}
+
+/* Secondary Nav (Bottom) */
+.secondary-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+.language-wrapper {
+  padding: 10px 15px;
+}
+
+.language-select select {
+
+  width:179px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #575859;
+  padding: 0 40px;
+  font-size: 18px;
+  background-color: #F9FCFE;
+  
+  color: #151A2D;
+}
+
+.logout-link {
+  position: absolute;
+  right: 30px;
+  width: 40px;
+ 
+}
+
+/* Main Content */
+.main-content {
+  width: 1300px;
+  position: absolute;
+ right: 0px;
+ top: 0px;
+  padding: 120px 40px 40px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.dashboard-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #F9FCFE;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  color: #0E466F;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Tickets Menu */
+/* Exact original styling */
+.main-content {
+  color: #0E466F;
+  margin-left: 465px;
+  margin-top:111px;
+  padding: 30px;
+  width: 1300px;
+  
+  min-height: calc(100vh - 95px);
+}
+
+.table-container {
+  
+  margin-top: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+}
+
+.tickets-table {
+  padding-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tickets-table th, .tickets-table td {
+ 
+  padding: 16px 24px;
+  border-bottom: 1px solid #EEF5FC;
+  text-align: left;
+}
+
+.tickets-table th {
+  border: 4px solid #ffffff;
+  background: #E8F4FF;
+  color: #0E466F;
+  font-weight: 600;
+}
+
+/* Status Badges */
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.status.undone {  color: #0E466F; font-weight: bold; }
+.status.done {  color: #0EB662; font-weight: bold; }
+.status.in-progress {  color: #DA6F28; font-weight: bold; }
+.status.on-hold {  color: #94B60E; font-weight: bold; }
+
+/* Priority Badges */
+.priority {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Form Elements */
+.view-btn {
+  background: #0E466F;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 20px;
+  
+  
+}
+
+.row-select {
+  font-weight: 600;
+  font-size: 20px;
+  width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #0E466F;
+  border-radius: 6px;
+  background: white;
+  color: #0E466F;
+}
+/* Checkbox styling */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0E466F;
+  border-radius: 4px;
+  accent-color: #0E466F;
+  cursor: pointer;
+}
+
+/* Table header checkbox alignment */
+.tickets-table th:first-child {
+  width: 40px;
+  padding-left: 24px;
+}
+
+.tickets-table td:first-child {
+  padding-left: 24px;
+}
+
+/* Existing styles remain the same */
+.tickets-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* ... other existing table styles ... */
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ 
+  padding: 20px 0;          /* Top and bottom padding */
+  text-align: center;
+ 
+}
+
+/* Pagination Container */
+.pagination {
+  display: inline-flex;  /* Center the pagination items */
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-top:110px;
+  padding-left:65%;
+  color: #0E466F;
+  
+}
+
+/* Pagination Button Styling */
+.pagination-btn {
+  border: none;
+  background: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  
+
+}
+
+/* Active Button Styling */
+.pagination-btn.active {
+  background: #0E466F;
+  color: white;
+  border: 1px solid #0E466F;
+}
+
+/* Optional Hover Effect for Buttons */
+.pagination-btn:hover {
+  background: #ddd;
+}
+
+/* Styling for the select dropdown and text */
+.pagination span,
+.pagination select {
+  font-size: 18px;
+  
+}

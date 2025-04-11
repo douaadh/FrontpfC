@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> All Ticket</title>
+    <link rel="stylesheet" href="all tickTeck.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="nav-left">
+          <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+          <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+        <img src="imgs/Search.svg" alt="Search">
+        
+    </div>
+      <div class="nav-right">
+          <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+    
+        </div>
+          
+      </div>
+      <ul>
+        <li class="nav-itm">
+            <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <ul class="dropdow-menu">
+                <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+    
+        
+    
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/Technicien/dashbored.html" class="nav-link">
+              <img src="imgs/Dashboard Layout.svg" alt="help-icon" class="help-icon">
+            <div class="nav-label"> Dashbored</div>
+            </a>
+            
+          </li>
+    <li class="nav-item dropdown-container">
+            
+       <div class="nav-link dropdown-toggle">
+              <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+              <a class="nav-label">Tickets</a>
+              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+       </div>
+            <!-- Dropdown Menu -->
+        <ul class="dropdown-menu">
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/all%20ticketTeck.html#" class="nav-link dropdown-link">All Ticket</a>
+                </li>
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/archeiv.html" class="nav-link dropdown-link">Archive</a>
+                   </li>
+        </ul>
+         </li> 
+                 <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Health Graph.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">Report</div>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">help</div>
+                </a>
+                
+              </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="language-wrapper">
+                
+                <div class="language-select">
+                  <select>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <!-- Add more languages here -->
+                  </select>
+                <a href="#" class="logout-link">
+                  <img src="imgs/Logout.svg" alt="Logout" >
+                  
+                </ul>
+          </nav>
+          <script src="script.js"></script>
+          <script src="nav.js"></script>
+      
+        </aside>
+        <main class="main-content">
+            <!-- Header Section -->
+            <div class="content-header">
+                
+                <div class="data-page">
+                    <select class="row-select">
+                        <option><button class="btn view-btn">View</button></option>
+                        <option>view</option>
+                        <option>View</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Tickets Table -->
+            <div class="table-container">
+                <table class="tickets-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <th>id Number</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Category</th>
+                            <th>Assigned to</th>
+                            <th>Date of Creation</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Exact original rows -->
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td href="http://127.0.0.1:5500/Technicien/ticket.html">#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status in-progress">in progress</span></td>
+                            <td><span class="priority high">High</span></td>
+                            <td>Uncondition</td>
+                            <td>Natashia Bunny</td>
+                            <td>23 September 2025</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status undone">Undone</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                            <td>Uncondition</td>
+                            <td>Unrestigated</td>
+                            <td>23 September 2025</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status done">done</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                            <td>Uncondition</td>
+                            <td>Unrestigated</td>
+                            <td>23 September 2025</td>
+                        </tr> <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status on-hold">On Hold</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                            <td>Uncondition</td>
+                            <td>Unrestigated</td>
+                            <td>23 September 2025</td>
+                        </tr> <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status undone">Undone</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                            <td>Uncondition</td>
+                            <td>Unrestigated</td>
+                            <td>23 September 2025</td>
+                        </tr> <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>#20330244</td>
+                            <td>Untitled</td>
+                            <td><span class="status todo">To Do</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                            <td>Uncondition</td>
+                            <td>Unrestigated</td>
+                            <td>23 September 2025</td>
+                        </tr> <tr>
+                          <td><input type="checkbox" class="row-checkbox"></td>
+                          <td>#20330244</td>
+                          <td>Untitled</td>
+                          <td><span class="status todo">To Do</span></td>
+                          <td><span class="priority medium">Medium</span></td>
+                          <td>Uncondition</td>
+                          <td>Unrestigated</td>
+                          <td>23 September 2025</td>
+                      </tr> <tr>
+                        <td><input type="checkbox" class="row-checkbox"></td>
+                        <td>#20330244</td>
+                        <td>Untitled</td>
+                        <td><span class="status todo">To Do</span></td>
+                        <td><span class="priority medium">Medium</span></td>
+                        <td>Uncondition</td>
+                        <td>Unrestigated</td>
+                        <td>23 September 2025</td>
+                    </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="footer">
+
+          <div class="pagination">
+              <span>Data per page</span>
+              <select>
+                  <option>10</option>
+              </select>
+              <div class="pag">
+              <button class="pagination-btn">&laquo;</button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">4</button>
+              <button class="pagination-btn">&raquo;</button></div>
+          </div>
+          </footer>
+          </body>
+          </html>

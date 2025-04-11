@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dashbored</title>
+    <link rel="stylesheet" href="dashbored.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="nav-left">
+          <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+          <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+        <img src="imgs/Search.svg" alt="Search">
+        
+    </div>
+      <div class="nav-right">
+          <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+    
+        </div>
+          
+      </div>
+      <ul>
+        <li class="nav-itm">
+            <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <ul class="dropdow-menu">
+                <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+    
+        
+    
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/Technicien/dashbored.html" class="nav-link">
+              <img src="imgs/Dashboard Layout.svg" alt="help-icon" class="help-icon">
+            <div class="nav-label"> Dashbored</div>
+            </a>
+            
+          </li>
+    <li class="nav-item dropdown-container">
+            
+       <div class="nav-link dropdown-toggle">
+              <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+              <a class="nav-label">Tickets</a>
+              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+       </div>
+            <!-- Dropdown Menu -->
+        <ul class="dropdown-menu">
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/all%20ticketTeck.html#" class="nav-link dropdown-link">All Ticket</a>
+                </li>
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/archeiv.html" class="nav-link dropdown-link">Archive</a>
+                   </li>
+        </ul>
+         </li> 
+                 <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Health Graph.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">Report</div>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">help</div>
+                </a>
+                
+              </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="language-wrapper">
+                
+                <div class="language-select">
+                  <select>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <!-- Add more languages here -->
+                  </select>
+                <a href="#" class="logout-link">
+                  <img src="imgs/Logout.svg" alt="Logout" >
+                  
+                </ul>
+          </nav>
+          <script src="script.js"></script>
+          <script src="nav.js"></script>
+      
+        </aside>
+ 
+<div class="main-content">
+  <!-- Stats Cards -->
+  <section class="stats-cards">
+    <div class="card">
+      <h3>Undone Tickets</h3>
+      <span>142</span>
+      <small class="positive">+1% Compared to last year</small>
+    </div>
+    <div class="card">
+      <h3>Inprogress Tickets</h3>
+      <span>20</span>
+      <small class="negative">-15% Compared to last year</small>
+    </div>
+    <div class="card">
+      <h3>On hold Tickets</h3>
+      <span>45</span>
+      <small class="positive">+5% Compared to last year</small>
+    </div>
+    <div class="card">
+      <h3>Done Tickets</h3>
+      <span>200</span>
+      <small class="positive">+15% Compared to last year</small>
+    </div>
+  </section>
+
+  <!-- Middle Section -->
+  <section class="middle-section">
+    <!-- Left column with rating and unassigned tickets -->
+    <div class="left-column">
+      <!-- Rating Score -->
+      <div class="rating-score chart-box">
+        <h3>Rating Score</h3>
+        <div class="star-rating">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star half-filled">★</span>
+          <span class="star empty">★</span>
+          <span class="rating-name"><select name="" id=""> <option value="">Natashia Bunny</option></select></span>
+        </div>
+        <p class="rating-text">Overall score: 4.5 Stars out of 5</p>
+      </div>
+
+      <!-- Unassigned/Assigned Tickets -->
+      <div class="assigned-tickets chart-box">
+        <div class="file-list">
+          <div class="file-box">
+            <span>Unassigned Tickets <br><h1>220</h1></span>
+          </div>
+          <div class="file-box">
+           
+            
+          <div class="file-box">
+            <span>Assigned Tickets <br><h1>112</h1></span>
+          </div>
+        </div>
+        
+          </div>
+      </div>
+    </div>
+
+    <!-- Right column with department chart -->
+    <div class="department-chart chart-box">
+      <h3>Tickets by department</h3>
+      <div class="department-graph">
+        <canvas id="departmentChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Charts Section -->
+  <section class="charts-container">
+    <div class="chart-box yearly-progress">
+      <h3>Tickets Yearly Progress</h3>
+      <canvas id="yearlyProgressChart"></canvas>
+    </div>
+    <div class="chart-box priority-distribution">
+      <h3>Tickets priority distribution</h3>
+      <div class="priority-chart">
+        <canvas id="priorityChart"></canvas>
+      </div>
+      <ul class="priority-list">
+        <li><span class="color-indicator low"></span> Low priority</li>
+        <li><span class="color-indicator medium"></span> Medium priority</li>
+        <li><span class="color-indicator high"></span> High priority</li>
+        <li><span class="color-indicator very-high"></span> Very high priority</li>
+      </ul>
+    </div>
+  </section>
+</div>
+      </body>
+      </html>

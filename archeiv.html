@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Archive</title>
+    <link rel="stylesheet" href="archiv.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="nav-left">
+          <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+          <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+        <img src="imgs/Search.svg" alt="Search">
+        
+    </div>
+      <div class="nav-right">
+          <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+    
+        </div>
+          
+      </div>
+      <ul>
+        <li class="nav-itm">
+            <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <ul class="dropdow-menu">
+                <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+    
+        
+    
+    <aside class="sidebar">
+          <nav class="sidebar-nav">
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+              
+              <!-- Dropdown -->
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/Technicien/dashbored.html" class="nav-link">
+                  <img src="imgs/Dashboard Layout.svg" alt="help-icon" class="help-icon">
+                <div class="nav-label"> Dashbored</div>
+                </a>
+                
+              </li>
+        <li class="nav-item dropdown-container">
+                
+           <div class="nav-link dropdown-toggle">
+                  <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+                  <a class="nav-label">Tickets</a>
+                  <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+           </div>
+                <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+                 <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/all%20ticketTeck.html#" class="nav-link dropdown-link">All Ticket</a>
+                    </li>
+                 <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/archeiv.html" class="nav-link dropdown-link">Archive</a>
+                       </li>
+            </ul>
+         </li> 
+                 <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Health Graph.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">Report</div>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">help</div>
+                </a>
+                
+              </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="language-wrapper">
+                
+                <div class="language-select">
+                  <select>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <!-- Add more languages here -->
+                  </select>
+                <a href="#" class="logout-link">
+                  <img src="imgs/Logout.svg" alt="Logout" >
+                  
+                </ul>
+          </nav>
+          <script src="script.js"></script>
+          <script src="nav.js"></script>
+      
+        </aside>
+        <main class="main-content">
+         
+          <div class="filter-controls">
+            <select class="view-select">
+              <option>View</option>
+              <option>Grid View</option>
+              <option>List View</option>
+            </select>
+            
+            <select class="filter-select">
+              <option>All tickets</option>
+              <option>Open tickets</option>
+              <option>Closed tickets</option>
+            </select>
+          </div>
+          
+          <table class="ticket-table">
+            <thead>
+              <tr>
+                <th>ID Number</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Category</th>
+                <th>Assigned to</th>
+                <th>Date of Creation</th>
+              </tr>
+            </thead>
+          </table>
+          <hr style="border: 1px solid #C1C3C4;">
+          <!-- Category One -->
+          <div class="category-header">
+            <div class="category-title"> 
+              Category one
+              <span class="dropdown-arrow material-symbols-rounded icon">expand_more</span>
+            </div>
+            <div class="pagination-info">1-4 of 4</div>
+          </div>
+          
+          <table class="ticket-table">
+            <tbody>
+              <tr>
+                <td class="ticket-id">#00130234</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-done">Done</span></td>
+                <td class="priority-high">High</td>
+                <td>Unavailable</td>
+                <td>Natasha Bunny</td>
+                <td>23 September 2025</td>
+              </tr>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-undone">Undone</span></td>
+                <td class="priority-medium">Medium</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-done">Done</span></td>
+                <td class="priority-low">Low</td>
+                <td>Unavailable</td>
+                <td> Nasser</td>
+                <td>23 September 2025</td>
+              </tr>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-done">Done</span></td>
+                <td class="priority-very-high">Very High</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <!-- Category Two -->
+          <div class="category-header">
+            <div class="category-title">
+              Category two
+              <span class="dropdown-arrow material-symbols-rounded icon">expand_more</span>
+            </div>
+            <div class="pagination-info">1-2 of 2</div>
+          </div>
+          
+          <table class="ticket-table">
+            <tbody>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-undone">Undone</span></td>
+                <td class="priority-very-high">Very High</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-undone">Undone</span></td>
+                <td class="priority-very-high">Very High</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <!-- Category Three -->
+          <div class="category-header">
+            <div class="category-title">
+              Category three
+              <span class="dropdown-arrow material-symbols-rounded icon">expand_more</span>
+            </div>
+            <div class="pagination-info">1-2 of 5</div>
+          </div>
+          
+          <table class="ticket-table">
+            <tbody>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-undone">Undone</span></td>
+                <td class="priority-very-high">Very High</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+              <tr>
+                <td class="ticket-id">#00130244</td>
+                <td>Untitled</td>
+                <td><span class="status-tag status-done">Done</span></td>
+                <td class="priority-very-high">Very High</td>
+                <td>Unavailable</td>
+                <td>Unassigned</td>
+                <td>23 September 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </main>
+        
+        <script src="script.js"></script>
+        <script src="nav.js"></script>
+      </body>
+    </html>

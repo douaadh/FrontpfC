@@ -1,0 +1,340 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+body {
+  min-height: 100vh;
+}
+
+
+
+/*---------------------------------- Navbar -----------------------------------*/
+.navbar {
+  display: flex;
+  
+  align-items: center;
+  background: linear-gradient(to right, #ffffff 0%,  #ffffff 55%,  #E8F4FF 100% ); 
+ padding:10px 5px;
+  width: 100%;
+  height: 95px;
+  position: fixed;
+ 
+   z-index: 1000;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-left {
+  display: flex;
+ 
+}
+
+.nav-logo {
+  width: 70px;
+  height: auto;
+}
+.alclogo{
+  width: 43px;
+  height: auto;
+
+}
+.search-bar{
+  
+
+  display: flex;
+justify-items: baseline;
+ 
+}
+.search-bar img{
+  margin-left: -45px;
+}
+
+.search-bar input {
+  padding-left: 20px; /* Adjust the right padding */
+  text-align: left;
+  color: #0E466F;
+  border:1px solid #0E466F;
+ 
+ 
+  margin-left: 370px;
+  margin-top: 3px;
+  width: 932px;
+  height: 51px;
+ border-radius: 5px;
+  font-size: 24px;
+}
+input::placeholder {
+  color: #0E466F;}
+
+
+.nav-right .notification-icon img {
+  width: 33px;
+  height: 33px;
+  color: #0E466F;
+  margin-top: 11px;
+  margin-left: 30px;
+ 
+ 
+ }
+
+ .nav-itm {
+    list-style: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-right: 30px;
+    position: relative; /* Added for dropdown positioning */
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    gap: 10px; /* Added for spacing between elements */
+  }
+  
+  .nav-link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px; 
+    object-fit: cover;
+  }
+  
+
+  .dropdow-menu {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 83px;
+    background: #ffffff;
+   
+    
+    box-shadow: 10px 2px 15px rgba(0.5,0,0,0.1);
+    min-width: 258px;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdow-menu.show {
+    display: block;
+  }
+  
+  .dropdow-link {
+    padding: 12px 50px;
+    display: flex;
+    border:0.2px solid #0a0a0a25;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdow-link:hover {
+    background: #f8f9fa;
+  }
+  
+  .symbols-rounded img {
+    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .rotate-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Material icons styling */
+  .material-symbols-rounded {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+/* ------------------------------------------------Sidbar---------------------------------------------*/
+/* Sidebar CSS */
+.sidebar {
+  position: fixed;
+  top: 95px;
+  left: 0;
+  width: 450px;
+  height: calc(100vh - 95px);
+  background-color: #F9FCFE;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Navigation Lists */
+.sidebar-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav .primary-nav {
+  margin-top: 60px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Nav Items */
+.sidebar-nav .nav-item {
+  position: relative;
+  margin: 5px 30px;
+}
+
+/* Nav Links */
+.sidebar-nav .nav-link,
+.sidebar-nav .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding: 12px 2px;
+  scrollbar-width: bold;
+  border-radius: 8px;
+  color: #151A2D;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 42px;
+  
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .dropdown-toggle:hover {
+  background-color: #E6F0FF;
+}
+
+/* Icons in sidebar */
+.sidebar-nav .nav-link img,
+.sidebar-nav .dropdown-toggle img:first-child {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.nav-label {
+  flex-grow: 1;
+}
+
+/* Dropdown toggle */
+.sidebar-nav .dropdown-toggle {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.dropdown-icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.dropdown-container.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.sidebar-nav .dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 80px;
+  margin: 0;
+}
+
+.sidebar-nav .dropdown-container.open .dropdown-menu {
+  max-height: 200px;
+}
+
+.dropdown-menu .nav-item {
+  margin: 2px 0;
+}
+
+/* FIX: Ensure dropdown menu items have the hover effect */
+.dropdown-menu .nav-link {
+  font-size: 24px;
+  padding: 8px 12px;
+  list-style: none;
+  color: #4A5568;
+  border-radius: 8px; /* Add border radius for consistent look */
+  transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+/* FIX: Add explicit hover style for dropdown items */
+.dropdown-menu .nav-item .nav-link:hover {
+  background-color: #E6F0FF;
+  color: #0E466F;
+}
+
+/* Active states */
+.nav-item.active > .nav-link,
+.dropdown-container.active > .dropdown-toggle {
+  background-color: #E6F0FF;
+  border-left: 4px solid #0E466F;
+  padding-left: 11px;
+  color: #0E466F;
+  font-weight: 600;
+}
+
+.dropdown-menu .nav-item.active .nav-link {
+  background-color: #E6F0FF;
+  color: #0E466F;
+  font-weight: 600;
+}
+
+/* This ensures open dropdown items don't all get borders */
+.dropdown-container.open:not(.active) .dropdown-toggle,
+.dropdown-container.open .dropdown-menu .nav-item:not(.active) .nav-link {
+  border-left: none;
+}
+
+/* Secondary Nav (Bottom) */
+.secondary-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+.language-wrapper {
+  padding: 10px 15px;
+}
+
+.language-select select {
+
+  width:179px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #575859;
+  padding: 0 40px;
+  font-size: 18px;
+  background-color: #F9FCFE;
+  
+  color: #151A2D;
+}
+
+.logout-link {
+  position: absolute;
+  right: 30px;
+  width: 40px;
+ 
+}

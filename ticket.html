@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ticket</title>
+    <link rel="stylesheet" href="ticket.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="nav-left">
+          <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+          <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+        <img src="imgs/Search.svg" alt="Search">
+        
+    </div>
+      <div class="nav-right">
+          <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+    
+        </div>
+          
+      </div>
+      <ul>
+        <li class="nav-itm">
+            <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <ul class="dropdow-menu">
+                <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+    
+        
+    
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/Technicien/dashbored.html" class="nav-link">
+              <img src="imgs/Dashboard Layout.svg" alt="help-icon" class="help-icon">
+            <div class="nav-label"> Dashbored</div>
+            </a>
+            
+          </li>
+    <li class="nav-item dropdown-container">
+            
+       <div class="nav-link dropdown-toggle">
+              <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+              <a class="nav-label">Tickets</a>
+              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+       </div>
+            <!-- Dropdown Menu -->
+        <ul class="dropdown-menu">
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/all%20ticketTeck.html#" class="nav-link dropdown-link">All Ticket</a>
+                </li>
+             <li class="nav-item"><a href="http://127.0.0.1:5500/Technicien/archeiv.html" class="nav-link dropdown-link">Archive</a>
+                   </li>
+        </ul>
+         </li> 
+                 <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Health Graph.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">Report</div>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">help</div>
+                </a>
+                
+              </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="language-wrapper">
+                
+                <div class="language-select">
+                  <select>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <!-- Add more languages here -->
+                  </select>
+                <a href="#" class="logout-link">
+                  <img src="imgs/Logout.svg" alt="Logout" >
+                  
+                </ul>
+          </nav>
+          <script src="script.js"></script>
+          <script src="nav.js"></script>
+      
+        </aside>
+        <main class="ticket-details">
+            <div class="left-panel">
+                <h6 class="ticket-id">Ticket ID:    #001302244</h6>
+              <h2 class="ticket-title">PRINTER ISSUE</h2>
+              <hr style="border: 1px solid rgba(79, 79, 79, 0.33);">
+              <p class="ticket-description">
+                My laptop has been restarting several times on its own. My antivirus software is active, but I don't believe it's successfully addressing the underlying problem. I would appreciate any assistance in fixing this issue.
+              </p>
+              
+          
+              <div class="attachments">
+                <p><strong>Attachment Files</p></strong></p>
+                
+                <div class="file-list">
+                  <div class="file-box"><img src="imgs/Help.svg" alt=""><span>issue screenshot.png <br><small>135 KB</small></span></div>
+                  <div class="file-box"><img src="imgs/Help.svg" alt=""><span>issue screenshot.png <br><small>135 KB</small></span> </div>
+                </div>
+              </div>
+          
+              <div class="form-section">
+                <label>Solution</label>
+                <textarea placeholder="Write your solution here..."></textarea>
+          
+                <div class="form-rw">
+                 <div class="categoryy">
+                 <label>Category</label>
+                  <select>
+                    
+                    <option>Hardware</option>
+                    <option>Software</option>
+                  </select></div> 
+                  <div class="status-in-progress">
+                  <label>Status</label>
+                  <select>
+                    
+                    <option>In Progress</option>
+                    <option>Resolved</option>
+                  </select> </div>
+                  <div class="assigned-to">
+                  <label >Assigned to</label>
+                  <select disabled>
+                   
+                    <option>Natasha Bunny</option>
+                  </select> </div>
+                </div>
+          
+                <div class="form-buttons">
+                  <button class="cancel">Cancel</button>
+                  <button class="submit">Submit</button>
+                </div>
+              </div>
+          
+              <div class="comments-section">
+                <h4>Comments</h4>
+                
+                <div class="comment-input">
+                  <img src="imgs//Group 15.svg" alt="User Avatar" class="comment-avatar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button class="send-button">
+                    <img src="imgs/Sent.svg" alt="" class="send-icon">
+                  </button>
+                </div>
+                
+                <!-- Comment boxes area would go here -->
+                <!-- You can add comment boxes as needed -->
+              </div>
+            </div>
+          
+            <div class="right-panel">
+                <div class="info-container">
+                    <div class="status-action">
+                       
+                        
+                        <div class="status-item">
+                            <span class="status-label">Raised for:</span>
+                            <span class="status-value">Anial Hosen </span>
+                        </div>
+                        
+                        <div class="status-item">
+                            <span class="status-label">Department :</span>
+                            <span class="status-value">Finance</span>
+                        </div>
+                        
+                        <div class="status-item">
+                            <span class="status-label">Group :</span>
+                            <span class="status-value">AG161</span>
+                        </div>
+                        
+                        <div class="status-item">
+                            <span class="status-label">Category :</span>
+                            <span class="status-value">Hardware</span>
+                        </div>
+                        
+                        <div class="status-item">
+                          <span class="status-label">Sub-Category  :</span>
+                          <span class="status-value">Printer</span>
+                      </div>
+                      
+                      <div class="status-item">
+                        <span class="status-label">Priority :</span>
+                        <span class="status-value">High</span>
+                    </div>
+                   <div class="status-item">
+                    <span class="status-label">Deadline :</span>
+                    <span class="status-value">19/02/2025</span>
+                </div>
+                    </div>
+                </div>
+          
+            
+              <div class="action-buttons">
+                <button class="close">Close</button>
+                <button class="archive">Archive</button>
+              </div>
+            </div>
+          </main>
+          
