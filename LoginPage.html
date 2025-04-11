@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="Loginpage.css">
+    <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <title>LoginPage</title>
+</head>
+<body>
+  
+  <div class="login-container">
+    <div class="login-logo">
+        <img src="imgs/Logo V1.png" alt="IT Plus Logo">
+    </div>
+    <div class="login-form">
+        <h2>Sign in</h2>
+        <div class="input-group">
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" placeholder="Enter your user_id">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <button class="login-btn">Login</button>
+    </div>
+</div>
+<script>
+    document.querySelector('.login-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Get input values
+        const userId = document.getElementById('user_id').value;
+        const password = document.getElementById('password').value;
+        const rememberMe = document.getElementById('remember').checked;
+    
+        // Simple validation
+        if(!userId || !password) {
+            alert('Please fill in all fields');
+            return;
+        }
+    
+        // Example authentication (replace with real API call)
+        if(userId === "admin" && password === "admin123") {
+            // Store session
+            if(rememberMe) {
+                localStorage.setItem('rememberedUser', userId);
+                localStorage.setItem('rememberedPass', password); // Note: Not secure for production
+            }
+            sessionStorage.setItem('isLoggedIn', 'true');
+            
+            // Redirect to ticket page
+            window.location.href = 'http://127.0.0.1:5500/AllTickets.html';
+        } else {
+            alert('Invalid credentials');
+        }
+    });
+    
+    // Remember me functionality
+    window.addEventListener('load', () => {
+        const rememberedUser = localStorage.getItem('rememberedUser');
+        const rememberedPass = localStorage.getItem('rememberedPass');
+        
+        if(rememberedUser && rememberedPass) {
+            document.getElementById('user_id').value = rememberedUser;
+            document.getElementById('password').value = rememberedPass;
+            document.getElementById('remember').checked = true;
+        }
+    });
+    </script>
+  </body>
+</html>
+
+

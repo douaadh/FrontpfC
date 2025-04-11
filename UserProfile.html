@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Ticket</title>
+    <link rel="stylesheet" href="userprofile.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+      <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+      <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    
+</div>
+  <div class="nav-right">
+      <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+
+    </div>
+      
+  </div>
+  <ul>
+  
+    <li class="nav-itm ">
+      <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+         <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+          <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+          <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+      </a>
+      <ul class="dropdow-menu">
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+      </ul>
+  </li>
+</ul>
+</header>
+
+    
+
+<aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span class="material-symbols-rounded">message</span>
+              <span class="nav-label">Tickets</span>
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+            </a>
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+             
+              <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a></li>
+              
+            </ul>
+          </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+              <span class="nav-label">help</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Secondary Bottom Nav -->
+        <ul class="nav-list secondary-nav">
+          <li class="nav-item">
+            
+            <div class="nav-link">
+              <select>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <!-- Add more languages here -->
+              </select>
+            <a href="#" class="nav-link">
+              <img src="imgs/Logout.svg" alt="Logout">
+              
+            </ul>
+      </nav>
+      
+  
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      
+      <div class="account-info">
+          <!-- Profile Section with Photo -->
+          <div class="profile-section">
+              <div class="profile-photo">
+                  <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile Picture">
+              </div>
+              <div class="profile-info">
+                  <h2>Welcome, BOO</h2>
+                  <p>natasiabunny@mail.com</p>
+              </div>
+          </div>
+          <div class="content-header">
+            <h1>Account Information</h1>
+        </div>
+          <div class="info-table">
+              <div class="table-row">
+                  <div class="table-cell">
+                      <span class="label">Full Name</span>
+                      <span class="value">Nateeshia Bunny</span>
+                  </div>
+                  <div class="table-cell">
+                      <span class="label">User Id</span>
+                      <span class="value">100%4</span>
+                  </div>
+              </div>
+              
+              <div class="table-row">
+                  <div class="table-cell">
+                      <span class="label">Email</span>
+                      <span class="value">notoslabunny@mail.com</span>
+                  </div>
+                  <div class="table-cell">
+                      <span class="label">Department</span>
+                      <span class="value">Department of Finance</span>
+                  </div>
+              </div>
+
+              <div class="table-row">
+                  <div class="table-cell">
+                      <span class="label">Phone Number</span>
+                      <span class="value">+283 6662 48 80 78</span>
+                  </div>
+                  <div class="table-cell">
+                      <span class="label">Role</span>
+                      <span class="value">Client</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>

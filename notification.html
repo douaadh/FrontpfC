@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Notifications</title>
+    <link rel="stylesheet" href="notification.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+      <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+      <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    
+</div>
+  <div class="nav-right">
+      <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+
+    </div>
+      
+  </div>
+  <ul>
+  
+    <li class="nav-itm ">
+      <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+       <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+          <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+          <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+      </a>
+      <ul class="dropdow-menu">
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+      </ul>
+  </li>
+</ul>
+</header>
+
+    
+
+<aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            <a href="#" class="nav-link dropdown-toggle">
+              <img src="imgs/9110359_messages_f_icon.svg" alt="logomessgg"class="help-icon" >
+              <span class="nav-label">Tickets</span>
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+            </a>
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+             
+              <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a></li>
+              
+            </ul>
+          </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+              <span class="nav-label">help</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Secondary Bottom Nav -->
+        <ul class="nav-list secondary-nav">
+          <li class="nav-item">
+            
+            <div class="nav-link">
+              <select>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <!-- Add more languages here -->
+              </select>
+            <a href="#" class="nav-link">
+              <img src="imgs/Logout.svg" alt="Logout">
+              
+            </ul>
+      </nav>
+      
+  
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="notification-area">
+          <h2>All Notifications</h2>
+
+          <div class="notification-item unread" onclick="markAsRead(this)">
+            <div class="unread-dot"></div>
+            <div class="notification-icon">NB</div>
+            <div class="notification-details">
+              <div class="notification-title">Natasha Bunny</div>
+              <div class="notification-message">Updated your ticket <strong>#00012312</strong></div>
+            </div>
+            <span class="notification-status">Done</span>
+          </div>
+          
+          <div class="notification-item unread">
+            <div class="unread-dot"></div>
+            <div class="notification-icon">MN</div>
+            <div class="notification-details">
+              <div class="notification-title">Mis you Nasser</div>
+              <div class="notification-message">Ticket #00022356 mis à jour</div>
+            </div>
+            <span class="notification-status">In Progress</span>
+          </div>
+          <div class="notification-item unread">
+            <div class="unread-dot"></div>
+              <div class="notification-icon">NB</div> <div class="notification-details">
+                  <div class="notification-title">Natasha Bunny</div>
+                  <div class="notification-message">Updated your ticket <strong>#00012312</strong> |</div>
+              </div>
+              <span class="notification-status status-done">Done</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">NB</div>
+              <div class="notification-details">
+                  <div class="notification-title">Natasha Bunny</div>
+                  <div class="notification-message">Added a comment to your ticket <strong>#00012312</strong> |</div>
+              </div>
+              <span class="notification-status status-in-progress">In Progress</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">NB</div>
+              <div class="notification-details">
+                  <div class="notification-title">Natasha Bunny</div>
+                  <div class="notification-message">Updated your ticket <strong>#00022441</strong> |</div>
+              </div>
+              <span class="notification-status status-in-progress">In Progress</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">MN</div> <div class="notification-details">
+                  <div class="notification-title">Mis you Nasser</div>
+                  <div class="notification-message">Updated your ticket <strong>#00012341</strong> |</div>
+              </div>
+              <span class="notification-status status-in-progress">In Progress</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">MN</div>
+              <div class="notification-details">
+                  <div class="notification-title">Mis you Nasser</div>
+                  <div class="notification-message">Added an attachment to your ticket <strong>#00022356</strong></div>
+              </div>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">MN</div>
+              <div class="notification-details">
+                  <div class="notification-title">Mis you Nasser</div>
+                  <div class="notification-message">Updated your ticket <strong>#00012341</strong> |</div>
+              </div>
+              <span class="notification-status status-done">Done</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">MN</div>
+              <div class="notification-details">
+                  <div class="notification-title">Mis you Nasser</div>
+                  <div class="notification-message">Updated your ticket <strong>#00012341</strong> |</div>
+              </div>
+              <span class="notification-status status-in-progress">In Progress</span>
+          </div>
+          <div class="notification-item">
+              <div class="notification-icon">MN</div>
+              <div class="notification-details">
+                  <div class="notification-title">Mis you Nasser</div>
+                  <div class="notification-message">Updated your ticket <strong>#00012341</strong> |</div>
+              </div>
+              <span class="notification-status status-in-progress">In Progress</span>
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

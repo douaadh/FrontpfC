@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Ticket</title>
+    <link rel="stylesheet" href="AllTickets.css" />
+     <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+      <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+      <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search" >
+    <img src="imgs/Search.svg" alt="Search">
+    
+</div>
+  <div class="nav-right">
+      <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
+
+    </div>
+      
+  </div>
+  <ul>
+  
+    <li class="nav-itm ">
+      <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+        <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+          <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+          <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+      </a>
+      <ul class="dropdow-menu">
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+      </ul>
+  </li>
+</ul>
+</header>
+
+    
+
+<aside class="sidebar">
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            
+            <a href="#" class="nav-link dropdown-toggle">
+              <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+              <span class="nav-label">Tickets</span>
+              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+             
+              <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a></li>
+              
+            </ul>
+          </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+              <span class="nav-label">help</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Secondary Bottom Nav -->
+        <ul class="nav-list secondary-nav">
+          <li class="nav-item">
+            
+            <div class="nav-link">
+              <select>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <!-- Add more languages here -->
+              </select>
+            <a href="#" class="nav-link">
+              <img src="imgs/Logout.svg" alt="Logout" >
+              
+            </ul>
+      </nav>
+      
+  
+    </aside>
+
+
+    <!-- Main Content -->
+<main class="content">
+  <div class="top-actions">
+    <a href="http://127.0.0.1:5500/CreatTickets.html"><button class="btn-primary"><p>Create a new Ticket</p> <img src="imgs/Plus.svg" alt="Logo"class="plus"></button></a>
+      <select class="filter-dropdown">
+          <option>All tickets</option>
+      </select>
+  </div>
+
+  <table class="tickets-table">
+      <thead>
+          <tr>
+              <th>Id Number</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Urgency</th>
+              <th>Category</th>
+              <th>Assigned to</th>
+              <th>Date of Creation</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><a href="#">#001302244</a></td>
+              <td>Untitled</td>
+              <td>To Do</td>
+              <td>Very High</td>
+              <td>Unavailable</td>
+              <td>Unassigned</td>
+              <td>23 September 2025</td>
+          </tr>
+          
+      
+  
+<tr>
+  <td><a href="#">#001302244</a></td>
+  <td>Untitled</td>
+  <td>To Do</td>
+  <td>Very High</td>
+  <td>Unavailable</td>
+  <td>Unassigned</td>
+  <td>23 September 2025</td>
+</tr>
+<tr>
+  <td><a href="#">#001302244</a></td>
+  <td>Untitled</td>
+  <td>To Do</td>
+  <td>Very High</td>
+  <td>Unavailable</td>
+  <td>Unassigned</td>
+  <td>23 September 2025</td>
+</tr>
+<tr>
+  <td><a href="#">#001302244</a></td>
+  <td>Untitled</td>
+  <td>To Do</td>
+  <td>Very High</td>
+  <td>Unavailable</td>
+  <td>Unassigned</td>
+  <td>23 September 2025</td>
+</tr>
+<tr>
+  <td><a href="#">#001302244</a></td>
+  <td>Untitled</td>
+  <td>To Do</td>
+  <td>Very High</td>
+  <td>Unavailable</td>
+  <td>Unassigned</td>
+  <td>23 September 2025</td>
+</tr>
+<tr>
+              <td><a href="#">#001302244</a></td>
+              <td>Untitled</td>
+              <td>To Do</td>
+              <td>Very High</td>
+              <td>Unavailable</td>
+              <td>Unassigned</td>
+              <td>23 September 2025</td>
+          </tr>
+          <!-- Repeat Rows as Needed -->
+      </tbody>
+  </table>
+<!--Foter-->
+  <footer class="footer">
+
+  <div class="pagination">
+      <span>Data per page</span>
+      <select>
+          <option>10</option>
+      </select>
+      <div class="pag">
+      <button class="pagination-btn">&laquo;</button>
+      <button class="pagination-btn active">1</button>
+      <button class="pagination-btn">2</button>
+      <button class="pagination-btn">3</button>
+      <button class="pagination-btn">4</button>
+      <button class="pagination-btn">&raquo;</button></div>
+  </div>
+</main>
+
+
+<script src="script.js">
+
+if(!sessionStorage.getItem('isLoggedIn')) {
+  window.location.href = 'http://127.0.0.1:5500/LoginPage.html';
+}
+function logout() {
+    sessionStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('rememberedUser');
+    localStorage.removeItem('rememberedPass');
+    window.location.href = 'http://127.0.0.1:5500/LoginPage.html';
+}
+</script>
+</body>
+</html>

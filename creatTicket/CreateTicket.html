@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/Icon V1.png">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=light">
+    
+    <link rel="stylesheet"  href="creatTicket.css">
+    <title>Create a Ticket</title>
+</head>
+<body>
+   
+    
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="top-section">
+          <div class="logo"><img src="umg/Icon V1.png" alt=""></div>
+          <nav>
+            <a href="C:\Users\HP\OneDrive\Bureau\pfc web\creattick.html" style="background-color: #f0f0f0;">Create a Ticket</a>
+            <a href="C:\Users\HP\OneDrive\Bureau\pfc web\all ticket.html">All Tickets</a>
+            <a href="#">Help</a>
+          </nav>
+        </div>
+        <div class="bottom-section">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <select>
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+              <!-- Add more languages here -->
+            </select>
+          </div>
+        </div>
+      </aside>
+    
+      <!-- MAIN CONTENT AREA -->
+      <div class="main-content">
+        <!-- TOP BAR -->
+        <header class="topbar">
+          <div class="search-box">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="user-profile">
+            <!-- Example user avatar -->
+            <img src="https://via.placeholder.com/32" alt="User Avatar">
+            <span class="username">Natasha Bunny</span>
+          </div>
+        </header>
+    
+        <!-- CONTENT WRAPPER -->
+        <div class="content-wrapper">
+          <div class="content-header">
+            <h2>Create a New Ticket</h2>
+            <p>Fill in the form below to raise a new ticket.</p>
+          </div>
+    
+          <!-- CREATE TICKET FORM -->
+          <form class="ticket-form">
+            <!-- Row 1 -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="title">Title *</label>
+                <input type="text" id="title" name="title" placeholder="Enter a title..." required />
+              </div>
+              <div class="form-group">
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                  <option value="">Select department</option>
+                  <option value="finance">Department of Finance</option>
+                  <option value="hr">Department of HR</option>
+                  <option value="it">IT Department</option>
+                </select>
+              </div>
+            </div>
+    
+            <!-- Row 2 -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="raisedFor">Raised For *</label>
+                <input type="text" id="raisedFor" name="raisedFor" placeholder="Person or group name..." required />
+              </div>
+              <div class="form-group">
+                <label for="deadline">Deadline *</label>
+                <input type="date" id="deadline" name="deadline" required />
+              </div>
+            </div>
+    
+            <!-- Row 3 -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="group">Group *</label>
+                <select id="group" name="group" required>
+                  <option value="">Select group</option>
+                  <option value="network">Network</option>
+                  <option value="hardware">Hardware</option>
+                  <option value="software">Software</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="subcategory">Sub Category</label>
+                <input type="text" id="subcategory" name="subcategory" placeholder="e.g. printer" />
+              </div>
+            </div>
+    
+            <!-- Row 4 -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="category">Category *</label>
+                <select id="category" name="category" required>
+                  <option value="">Select category</option>
+                  <option value="technical">Technical</option>
+                  <option value="administrative">Administrative</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="priority">Priority *</label>
+                <select id="priority" name="priority" required>
+                  <option value="">Select priority</option>
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                  <option value="veryhigh">Very High</option>
+                </select>
+              </div>
+            </div>
+    
+            <!-- Description -->
+            <div class="form-group">
+              <label for="description">Description (required)</label>
+              <textarea id="description" name="description" placeholder="My printer isn't working..." required></textarea>
+            </div>
+    
+            <!-- Attachment -->
+            <div class="form-group">
+              <label>Attachment</label>
+              <div class="attachment-group">
+                <input type="file" id="attachment" name="attachment" />
+              </div>
+            </div>
+    
+            <!-- Buttons -->
+            <div class="btn-row">
+              <button type="button" class="btn-secondary" onclick="window.location.href='all-tickets.html'">Cancel</button>
+              <button type="submit" class="btn-primary">Submit</button>
+            </div>
+          </form>
+    
+          <!-- COMMENTS SECTION (Optional) -->
+          <div class="comments-section">
+            <h3>Comments</h3>
+            <div class="comment-box">
+              <input type="text" placeholder="Add a comment..." />
+              <button type="button">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
