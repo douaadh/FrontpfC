@@ -45,6 +45,6 @@ const loginForm = document.getElementById('loginForm');
         }
 
         // Check if already logged in
-        if (localStorage.getItem('isLoggedIn') {
+        if (localStorage.getItem('isLoggedIn')) {
             redirectToDashboard();
         }

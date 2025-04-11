@@ -12,100 +12,100 @@
   </head>
   <body>
 
-<!-- Navbar -->
-<header class="navbar">
-  <div class="nav-left">
-      <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
-      <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
-  </div>
-  <div class="search-bar">
-    <input type="text" placeholder="Search" >
-    <img src="imgs/Search.svg" alt="Search">
-    
-</div>
-  <div class="nav-right">
-      <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
-
-    </div>
-      
-  </div>
-  <ul>
-  
-    <li class="nav-itm ">
-      <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
-        <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
-          <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
-          <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
-      </a>
-      <ul class="dropdow-menu">
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
-      </ul>
-  </li>
-</ul>
-</header>
-
-    
-
-<aside class="sidebar">
-      <nav class="sidebar-nav">
-        <!-- Primary Top Nav -->
-        <ul class="nav-list primary-nav">
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+            <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" >
+          <img src="imgs/Search.svg" alt="Search">
           
-          <!-- Dropdown -->
-          <li class="nav-item dropdown-container">
-            <a href="#" class="nav-link dropdown-toggle">
-              <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
-              <span class="nav-label">Tickets</span>
-              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
-            </a>
-            <!-- Dropdown Menu -->
-            <ul class="dropdown-menu">
-             
-              <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a></li>
-              
-            </ul>
-          </li>
-             <li class="nav-item">
-            <a href="#" class="nav-link">
-              <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
-              <span class="nav-label">help</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Secondary Bottom Nav -->
-        <ul class="nav-list secondary-nav">
-          <li class="nav-item">
-            
-            <div class="nav-link">
-              <select>
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <!-- Add more languages here -->
-              </select>
-            <a href="#" class="nav-link">
-              <img src="imgs/Logout.svg" alt="Logout">
-              
-            </ul>
-      </nav>
+      </div>
+        <div class="nav-right">
+            <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
       
-  
-    </aside>
+          </div>
+            
+        </div>
+        <ul>
+          <li class="nav-itm">
+              <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                  <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                  <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                  <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+              </a>
+              <ul class="dropdow-menu">
+                  <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                  <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                  <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                  <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+              </ul>
+          </li>
+      </ul>
+      </header>
+      
+          
+      
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav-list primary-nav">
+            
+            <!-- Dropdown -->
+           
+      <li class="nav-item dropdown-container">
+              
+         <div class="nav-link dropdown-toggle">
+                <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
+                <a class="nav-label">Tickets</a>
+                <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+         </div>
+              <!-- Dropdown Menu -->
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a>
+            </li>
+      <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a>
+               </li>
+          </ul>
+           </li> 
+                 
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                    <div class="nav-label">help</div>
+                  </a>
+                  
+                </li>
+              </ul>
+              <!-- Secondary Bottom Nav -->
+              <ul class="nav-list secondary-nav">
+                <li class="language-wrapper">
+                  
+                  <div class="language-select">
+                    <select>
+                      <option value="en">English</option>
+                      <option value="ar">Arabic</option>
+                      <!-- Add more languages here -->
+                    </select>
+                  <a href="#" class="logout-link">
+                    <img src="imgs/Logout.svg" alt="Logout" >
+                    
+                  </ul>
+            </nav>
+            <script src="script.js"></script>
+            <script src="nav.js"></script>
+        
+          </aside>
+      
 
+    
 
+<!----------------------------- Container ------------------------------>
+<div class="main-content">
 
-
-    <!----------------------------- Container ------------------------------>
-
-  <div class="container">
-   
-    <form action="#" method="">
+<div class="container">
+      <form action="#" method=""id="mainForm">
         <div class="form-group">
             <label for="title">Title </label>
             <input type="text" id="title" name="title" placeholder="Enter title" required>
@@ -114,12 +114,18 @@
         <div class="form-row">
             <div class="form-group">
                 <label for="raised-for">Raised for </label>
-                <input type="text" id="raised-for" name="raised-for" value="Ainal Hosen" disabled>
+                <input type="text" id="raised-for" name="raised-for" value="Ainal Hosen" >
             </div>
 
             <div class="form-group">
+                
+                
+              
                 <label for="department">Department </label>
-                <input type="text" id="department" name="department" value="Department of Finance" disabled>
+                <select id="departement" name="departement " required>
+                    <option value="departement of Finance">departement of Finance</option>
+                    <option value="departement of Finance">departement of Finance</option>
+                </select>
             </div>
         </div>
 
@@ -184,15 +190,50 @@
             <textarea id="Comment" name="Comment" placeholder="Add a Comment..." required></textarea>
         </div>
     </form>
-  </div>
-    <!-- Info Box -->
-    <div id="infoBox" style="display: none;">
-      <h3>Ticket Summary</h3>
-      <div id="infoContent"></div>
-  </div>
+      
+      <div class="info-container">
+          <div class="status-action">
+             
+              
+              <div class="status-item">
+                  <span class="status-label">Raised by :</span>
+                  <span class="status-value">Anial Hosen </span>
+              </div>
+              
+              <div class="status-item">
+                  <span class="status-label">Raised on :</span>
+                  <span class="status-value">4 May 2023</span>
+              </div>
+              
+              <div class="status-item">
+                  <span class="status-label">Status :</span>
+                  <span class="status-value">Undone</span>
+              </div>
+              
+              <div class="status-item">
+                  <span class="status-label">Assignee :</span>
+                  <span class="status-value">Unassigned</span>
+              </div>
+              
+              <div class="status-item">
+                <span class="status-label">Time Passed :</span>
+                <span class="status-value">0 days</span>
+            </div>
+            
+            <div class="status-item">
+              <span class="status-label">Deadline :</span>
+              <span class="status-value">19/02/2025</span>
+          </div>
+              
+          </div>
+      </div>
+
+  
+    </div>
+       </div>
+
+    <script src="script.js">
     
-
-
-    <script src="script.js"></script>
+    </script>
 </body>
 </html>

@@ -22,10 +22,27 @@ const toggleDropdown = (dropdown, menu, isOpen) => {
   });
   
   
+  function toggleDropdow() {
+    const dropdown = document.querySelector('.dropdow-menu');
+    const arrow = document.querySelector('.symbols-rounded img');
+    
+    dropdown.classList.toggle('show');
+    arrow.classList.toggle('rotate-arrow');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.querySelector('.dropdow-menu');
+    const profileSection = document.querySelector('.nav-itm');
+    
+    if (!profileSection.contains(event.target)) {
+        dropdown.classList.remove('show');
+        document.querySelector('.symbols-rounded img').classList.remove('rotate-arrow');
+    }
+});
 
 
-
- // Dans script.js
+ // notification
 function markAsRead(element) {
   if (element.classList.contains('unread')) {
     element.classList.remove('unread');

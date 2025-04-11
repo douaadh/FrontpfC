@@ -12,96 +12,97 @@
   </head>
   <body>
 
-<!-- Navbar -->
-<header class="navbar">
-  <div class="nav-left">
-      <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
-      <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
-  </div>
-  <div class="search-bar">
-    <input type="text" placeholder="Search" >
-    <img src="imgs/Search.svg" alt="Search">
-    
-</div>
-  <div class="nav-right">
-      <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
-
+    <header class="navbar">
+      <div class="nav-left">
+          <img src="imgs/Icon V3.png" alt="Logo 1" class="nav-logo">
+          <img src="imgs/1709463173 6.svg" alt="Logo 2" class="alclogo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+        <img src="imgs/Search.svg" alt="Search">
+        
     </div>
-      
-  </div>
-  <ul>
-  
-    <li class="nav-itm ">
-      <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
-        <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
-          <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
-          <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
-      </a>
-      <ul class="dropdow-menu">
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
-          <li class="nav-itm"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
-      </ul>
-  </li>
-</ul>
-</header>
-
+      <div class="nav-right">
+          <div class="notification-icon"> <a href="http://127.0.0.1:5500/notification.html"><img src="imgs/Notification.svg" alt="notification-icon"></a>
     
-
-<aside class="sidebar">
+        </div>
+          
+      </div>
+      <ul>
+        <li class="nav-itm">
+            <a class="nav-link dropdown-toggle" onclick="toggleDropdow()">
+                <img src="imgs/professional-determined-good-looking-young-armenian-employee-show-ok-gesture-understood-task-make-okay-gesture-smiling-broadly-agree-think-outfit-looks-excellent-standing-white-background.jpg" alt="Profile">
+                <span class="nav-label">Natasha Bunny<br>xxx@bunnymail.com</span>
+                <span class="symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
+            </a>
+            <ul class="dropdow-menu">
+                <li class="nav-itim"><a href="http://127.0.0.1:5500/UserProfile.html"class="nav-link dropdow-link"><span class="material-symbols-rounded">person</span>Profile</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">dark_mode</span>Dark Mode</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link"><span class="material-symbols-rounded">translate</span>Language</a></li>
+                <li class="nav-itim"><a class="nav-link dropdow-link" onclick="logout()"><span class="material-symbols-rounded">logout</span>Sign Out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+    
+        
+    
+    <aside class="sidebar">
       <nav class="sidebar-nav">
         <!-- Primary Top Nav -->
         <ul class="nav-list primary-nav">
           
           <!-- Dropdown -->
-          <li class="nav-item dropdown-container">
+         
+    <li class="nav-item dropdown-container">
             
-            <a href="#" class="nav-link dropdown-toggle">
+       <div class="nav-link dropdown-toggle">
               <img src="imgs/Tickets Icon.svg" alt="logoticket"class="ticket-icon" >
-              <span class="nav-label">Tickets</span>
-              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/icons8-expand-arrow-32.png" alt=""></span>
-            </a>
+              <a class="nav-label">Tickets</a>
+              <span class="dropdown-icon material-symbols-rounded"><img src="imgs/keyboard_arrow_down.svg" alt=""></span>
+       </div>
             <!-- Dropdown Menu -->
-            <ul class="dropdown-menu">
-             
-              <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a></li>
-              
-            </ul>
+        <ul class="dropdown-menu">
+          <li class="nav-item"><a href="http://127.0.0.1:5500/CreatTickets.html" class="nav-link dropdown-link">Create a Ticket</a>
           </li>
-             <li class="nav-item">
-            <a href="#" class="nav-link">
-              <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
-              <span class="nav-label">help</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
-            </ul>
-          </li>
+    <li class="nav-item"><a href="http://127.0.0.1:5500/AllTickets.html" class="nav-link dropdown-link">All Ticket</a>
+             </li>
         </ul>
-        <!-- Secondary Bottom Nav -->
-        <ul class="nav-list secondary-nav">
-          <li class="nav-item">
-            
-            <div class="nav-link">
-              <select>
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <!-- Add more languages here -->
-              </select>
-            <a href="#" class="nav-link">
-              <img src="imgs/Logout.svg" alt="Logout" >
-              
+         </li> 
+               
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imgs/Help.svg" alt="help-icon" class="help-icon">
+                  <div class="nav-label">help</div>
+                </a>
+                
+              </li>
             </ul>
-      </nav>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="language-wrapper">
+                
+                <div class="language-select">
+                  <select>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <!-- Add more languages here -->
+                  </select>
+                <a href="#" class="logout-link">
+                  <img src="imgs/Logout.svg" alt="Logout" >
+                  
+                </ul>
+          </nav>
+          <script src="script.js"></script>
+          <script src="nav.js"></script>
       
-  
-    </aside>
+        </aside>
+    
+   
 
 
     <!-- Main Content -->
-<main class="content">
+<div class="content">
   <div class="top-actions">
     <a href="http://127.0.0.1:5500/CreatTickets.html"><button class="btn-primary"><p>Create a new Ticket</p> <img src="imgs/Plus.svg" alt="Logo"class="plus"></button></a>
       <select class="filter-dropdown">
@@ -181,7 +182,7 @@
           </tr>
           <!-- Repeat Rows as Needed -->
       </tbody>
-  </table>
+  </table></main>
 <!--Foter-->
   <footer class="footer">
 
@@ -198,7 +199,7 @@
       <button class="pagination-btn">4</button>
       <button class="pagination-btn">&raquo;</button></div>
   </div>
-</main>
+  </footer>
 
 
 <script src="script.js">
